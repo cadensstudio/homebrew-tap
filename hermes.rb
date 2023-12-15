@@ -5,20 +5,20 @@
 class Hermes < Formula
   desc "CLI tool to download Google Fonts"
   homepage "https://hermes.cadens.studio/"
-  version "0.0.1-alpha"
+  version "0.0.1-beta"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-alpha/hermes_v0.0.1-alpha_macOS_arm64.tar.gz"
-      sha256 "2733d29c646e7dd9627f8dbe39a75d074f1d18ac2ebb5213dbe19a4d70b49a44"
+      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-beta/hermes_v0.0.1-beta_macOS_arm64.tar.gz"
+      sha256 "268243b4304151eda28dea2c1ac9fa7f0e1846b18486ea4eee28db7e0ba43860"
 
       def install
         bin.install "hermes"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-alpha/hermes_v0.0.1-alpha_macOS_x86_64.tar.gz"
-      sha256 "33452c1bc8fc3ac0fef26381847c37f1bb2cea3441321baf28ebe18daff979c8"
+      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-beta/hermes_v0.0.1-beta_macOS_x86_64.tar.gz"
+      sha256 "dc9442849d7a906d847eda4381ccb504fe881896886347e632928962ebcc54d4"
 
       def install
         bin.install "hermes"
@@ -28,8 +28,8 @@ class Hermes < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-alpha/hermes_v0.0.1-alpha_Linux_x86_64.tar.gz"
-      sha256 "895187073d2d1e9f8bfb0b091e8050e15af1d818aa50bdffa2dc9a4aaa4b7e02"
+      url "https://github.com/cadensstudio/hermes/releases/download/v0.0.1-beta/hermes_v0.0.1-beta_Linux_x86_64.tar.gz"
+      sha256 "037c12c9cfaaa74abca3828e91a256b8f6e5329cb0f3fdd0e4f602290a06709d"
 
       def install
         bin.install "hermes"
